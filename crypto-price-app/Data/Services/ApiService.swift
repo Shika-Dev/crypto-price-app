@@ -10,7 +10,7 @@ import Foundation
 class ApiService {
     func fetchCoinList(completion: @escaping(Result<CoinResponse, Error>) -> Void) {
         let url = URL(string: "https://api.coinlore.net/api/tickers/")!
-        print("🌐 Memulai request ke API: \(url)")
+        print("🌐 Start the API request: \(url)")
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
@@ -20,7 +20,7 @@ class ApiService {
             }
             
             guard let data = data else {
-                print("❌ Tidak ada data yang diterima")
+                print("❌ Empty data")
                 completion(.failure(NSError(domain: "No Data", code: 0)))
                 return
             }
@@ -29,7 +29,7 @@ class ApiService {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let result = try decoder.decode(CoinResponse.self, from: data)
-                print("✅ Berhasil decode response dengan \(result.data.count) coins")
+                print("✅ Successfully decode the response")
                 completion(.success(result))
             } catch {
                 print("❌ Decode error: \(error.localizedDescription)")

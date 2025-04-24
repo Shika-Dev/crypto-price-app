@@ -20,14 +20,14 @@ class HomepageViewModel: ObservableObject {
     }
     
     func loadCoins() {
-        print("🔄 Memulai load coins...")
+        print("🔄 Load the coins...")
         isLoading = true
         usecase.fetchCoins { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false
                 switch result {
                 case .success(let entity):
-                    print("✅ Berhasil mendapatkan \(entity.coinList.count) coins")
+                    print("✅ Get \(entity.coinList.count) coins successfully")
                     self?.coins = entity.coinList
                     self?.lastUpdate = entity.lastUpdate
                 case .failure(let error):
