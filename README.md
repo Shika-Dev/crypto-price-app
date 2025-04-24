@@ -1,23 +1,23 @@
-# Crypto Price App
+# 🚀 Crypto Price App
 
 An iOS application for monitoring cryptocurrency prices in real-time.
 
-## Features
+## ✨ Features
 
-- Display list of cryptocurrencies with current prices
-- Pull-to-refresh to update data
-- Clean and readable interface
-- Support for both iPhone and iPad
+- 📊 Display list of cryptocurrencies with current prices
+- 🔄 Pull-to-refresh to update data
+- 🎨 Clean and readable interface
+- 📱 Support for both iPhone and iPad
 
-## Technologies Used
+## 🛠 Technologies Used
 
-- SwiftUI for UI
-- MVVM Architecture
-- Clean Architecture
-- URLSession for networking
-- Combine for reactive programming
+- 🎯 SwiftUI for UI
+- 🏗 MVVM Architecture
+- 🧹 Clean Architecture
+- 🌐 URLSession for networking
+- ⚡️ Combine for reactive programming
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 crypto-price-app/
@@ -48,18 +48,18 @@ crypto-price-app/
     └── Preview Assets.xcassets
 ```
 
-## How to Run
+## 🚀 How to Run
 
-1. Clone this repository
-2. Open `crypto-price-app.xcodeproj` in Xcode
-3. Select simulator or device target
-4. Press Run (⌘R)
+1. 📥 Clone this repository
+2. 💻 Open `crypto-price-app.xcodeproj` in Xcode
+3. 📱 Select simulator or device target
+4. ▶️ Press Run (⌘R)
 
-## API
+## 🔌 API
 
 This application uses the [CoinLore](https://www.coinlore.com/cryptocurrency-data-api) API to fetch cryptocurrency data.
 
-## Logging
+## 📝 Logging
 
 The application has a comprehensive logging system to help with debugging:
 
@@ -68,10 +68,10 @@ The application has a comprehensive logging system to help with debugging:
 - ❌ Error logging
 - 🔄 Progress logging
 
-## Contributing
+## 🤝 Contributing
 
 Please feel free to submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
+## 📄 License
 
 [MIT](https://choosealicense.com/licenses/mit/) 
